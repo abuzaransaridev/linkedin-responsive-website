@@ -22,24 +22,22 @@
 				display:flex;
 				align-items:center;
 				justify-content: space-between;
-				padding:0.4rem 4.8rem;
-				background:green;
+				padding:0.1rem 4.8rem;
+				background:white;
 			}
-			header div{
+			header > div{
 				display:flex;
 				align-items:center;
 				justify-content:center;			
 				width:29%;
-				background:red;
 			}
 			.fa-linkedin{
 				color:blue;	
 				font-size: 2.5rem;				
 			}
-			header a{
+			header > a{
 				
 				font-size:1.9rem;
-				background:blue;
 				color:white;
 				font-weight:bold;
 				padding:0rem 0.3rem;
@@ -54,6 +52,7 @@
 				display:flex;
 				align-items:center;
 				width:100%;
+				border:1px solid gray;
 			}
 			header input{
 				outline:none;
@@ -69,19 +68,26 @@
 				background-color: rgba(147, 168, 168, .9);
 			}	
 			nav{
-				display:grid;
-				grid-template-columns:repeat(8,1fr);
-				background:yellow;	
+				display:flex;
+				gap:1px;
 			}
 			.boxes{
 				display: flex;
+				align-items:center;
+				justify-content:center;
 				flex-direction: column;
-				align-items: center;
-				padding:0.1rem 1rem;
+				padding:0.1rem 0.85rem;
+				font-size:0.85rem;
 			}
 			.home-font{
-				font-size:2rem;
+				font-size:1.5rem;
 			}
+			.logo
+			{
+				border-radius:50%;
+				height:25px;
+				width:28px;
+			}			
 		</style>
 	</head>
 	
@@ -92,32 +98,38 @@
 				<div class="input_box"><i class="ri-search-line"></i><input type="text" placeholder="Search"></div>
 			</div>
 			<nav>
-				<div class="boxes">
+				<a href="#" class="boxes">
 					<span class="home-font"><i class="ri-home-5-fill"></i></span>
 					<span>Home</span>
-				</div>
-				<div class="boxes">
+				</a>
+				<a href="#"class="boxes">
 					<span class="home-font"><i class="ri-group-line"></i></i></span>
 					<span>Network</span>
-				</div>
-				<div class="boxes">
-					
-				</div>
-				<div class="boxes">
-					
-				</div>
-				<div class="boxes">
-					
-				</div>
-				<div class="boxes">
-					
-				</div>
-				<div class="boxes">
-					
-				</div>
-				<div class="boxes">
-					
-				</div>
+				</a>
+				<a href="#" class="boxes">
+					<span class="home-font"><i class="ri-mail-open-line"></i></span>
+					<span>Jobs</span>
+				</a>
+				<a href="#" class="boxes">
+					<span class="home-font"><i class="ri-message-3-line"></i></span>
+					<span class="content-font">Message</span>
+				</a>
+				<a href="#" class="boxes">
+					<span class="home-font"><i class="ri-notification-3-line"></i></span>
+					<span>Notifaction</span>
+				</a>
+				<a href="#" class="boxes">
+					<img class="logo" src="https://yt3.ggpht.com/yti/ANjgQV-nwZirt5-Hn5oOMmOU9uOA8t3wg8_bgBEhOC6K7V_Rhw=s88-c-k-c0x00ffffff-no-rj-mo">
+					<span>Me<i class="ri-arrow-down-s-fill"></i></span>
+				</a>
+				<a href="#" class="boxes">
+					<span class="home-font"><i class="ri-menu-line"></i></span>
+					<span>For Business</span>
+				</a>
+				<a href="#" class="boxes">
+					<span class="home-font"><i class="ri-focus-2-line"></i></span>
+					<span>Advertise</span>
+				</a>
 			</nav>
 		</header>
 	</body>
